@@ -1,0 +1,9 @@
+<ul class="list-group">
+		  
+  <li class="list-group-item">
+    <%= @todo.description %>
+    <%= link_to 'Destroy', todo_path, class="btn btn-danger",
+     method: :delete,
+     data: {confirm 'Are you sure?'}%>
+  </li>
+</ul>

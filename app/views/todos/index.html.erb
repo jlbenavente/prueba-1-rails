@@ -1,0 +1,27 @@
+<table class="table table-striped table-dark">
+
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+        <ul class="list-group">
+        <% @todos.each do |todo| %>
+          <li class="list-group-item">
+            <%= todo.description %> 
+            <%= link_to 'edit', edit_todo_path(todo) %>
+          </li>
+        <%end %>
+        </ul>
+    </tr>
+  
+  </tbody>
+</table>
+<div class="col-md-2 offset-md-1 btn btn-info">
+    <%= link_to 'new todo', new_todo_path%>
+  </div>
+</div>
