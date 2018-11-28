@@ -29,11 +29,24 @@ class TodosController < ApplicationController
 
   def destroy
   	@todo = Todo.find(params[:id])
-   # if @todo.destroy
-   #   redirect_to todos_path
-  #  end
+    if @todo.destroy
+      redirect_to todos_path
+    end
+  end
+  
+  def update
+  	@todo = Todo.find(params[:id])
+    if @todo.update(todo_params)
+      redirect_to @todo
+    end
   end
 
+  def complete
+  	@todo = Todo.find(params[:id])
+  	@todo.completed = true
+  	@todo.save
+  	redirect_to todos_path
+  end
 	private
 
 	def todo_params
