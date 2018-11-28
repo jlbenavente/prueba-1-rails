@@ -1,4 +1,5 @@
 class TodosController < ApplicationController
+
 	def index
 		@todos = Todo.all
 	end
@@ -8,32 +9,39 @@ class TodosController < ApplicationController
 	end
 
 	def create
-	  @todo = Todo.new(todo_params)
+		@todo = Todo.new(todo_params)
 
-	  if @todo.save
-	    redirect_to todos_path
-	  else
-	    redirect_to new_todo_path
-	  end
+		if @todo.save
+			redirect_to todos_path
+		else
+			redirect_to new_todo_path
+		end
 	end
 
-  def show
-	  @todo = Todo.find(params[:id])
+	def show
+		@todo = Todo.find(params[:id])
 	end
 
 	def edit
-    @todo = Todo.find(params[:id])
-  end
+		@todo = Todo.find(params[:id])
+	end
 
+
+  def destroy
+  	@todo = Todo.find(params[:id])
+   # if @todo.destroy
+   #   redirect_to todos_path
+  #  end
+  end
 
 	private
 
 	def todo_params
-	  params.require(:todo).permit(:description, :completed)
+		params.require(:todo).permit(:description, :completed)
 	end
 
 	def set_todo
-	  @todo = Todo.find(params[:id])
+		@todo = Todo.find(params[:id])
 	end
 
 end

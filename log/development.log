@@ -2515,3 +2515,445 @@ Processing by TodosController#new as HTML
 Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/todos/" for 127.0.0.1 at 2018-11-27 20:55:39 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:13
+  Rendered todos/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos/4" for 127.0.0.1 at 2018-11-27 20:57:47 -0300
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:21
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:5: syntax error, unexpected '='
+...to 'Destroy', todo_path, class="btn btn-danger",
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:5: syntax error, unexpected ',', expecting ')'
+...o_path, class="btn btn-danger",
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:7: syntax error, unexpected '}', expecting ')'
+...data: {confirm 'Are you sure?'});@output_buffer.safe_append='
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/todos/show.html.erb:5: syntax error, unexpected '='
+app/views/todos/show.html.erb:5: syntax error, unexpected ',', expecting ')'
+app/views/todos/show.html.erb:7: syntax error, unexpected '}', expecting ')'
+app/views/todos/show.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/todos/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/todos/1" for 127.0.0.1 at 2018-11-27 20:58:02 -0300
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:21
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:5: syntax error, unexpected '='
+...to 'Destroy', todo_path, class="btn btn-danger",
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:5: syntax error, unexpected ',', expecting ')'
+...o_path, class="btn btn-danger",
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:7: syntax error, unexpected '}', expecting ')'
+...data: {confirm 'Are you sure?'});@output_buffer.safe_append='
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/todos/show.html.erb:5: syntax error, unexpected '='
+app/views/todos/show.html.erb:5: syntax error, unexpected ',', expecting ')'
+app/views/todos/show.html.erb:7: syntax error, unexpected '}', expecting ')'
+app/views/todos/show.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/todos/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/todos/1" for 127.0.0.1 at 2018-11-27 21:02:23 -0300
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:5: syntax error, unexpected '='
+...to 'Destroy', todo_path, class="btn btn-danger",
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:5: syntax error, unexpected ',', expecting ')'
+...o_path, class="btn btn-danger",
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:7: syntax error, unexpected '}', expecting ')'
+...data: {confirm 'Are you sure?'});@output_buffer.safe_append='
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/todos/show.html.erb:5: syntax error, unexpected '='
+app/views/todos/show.html.erb:5: syntax error, unexpected ',', expecting ')'
+app/views/todos/show.html.erb:7: syntax error, unexpected '}', expecting ')'
+app/views/todos/show.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/todos/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/todos/1" for 127.0.0.1 at 2018-11-27 21:04:49 -0300
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.6ms)
+
+
+  
+SyntaxError (/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:5: syntax error, unexpected '='
+...to 'Destroy', todo_path, class="btn btn-danger",
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:5: syntax error, unexpected ',', expecting ')'
+...o_path, class="btn btn-danger",
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:7: syntax error, unexpected '}', expecting ')'
+...data: {confirm 'Are you sure?'});@output_buffer.safe_append='
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/todos/show.html.erb:5: syntax error, unexpected '='
+app/views/todos/show.html.erb:5: syntax error, unexpected ',', expecting ')'
+app/views/todos/show.html.erb:7: syntax error, unexpected '}', expecting ')'
+app/views/todos/show.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/todos/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/todos/1" for 127.0.0.1 at 2018-11-27 21:04:50 -0300
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:5: syntax error, unexpected '='
+...to 'Destroy', todo_path, class="btn btn-danger",
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:5: syntax error, unexpected ',', expecting ')'
+...o_path, class="btn btn-danger",
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:7: syntax error, unexpected '}', expecting ')'
+...data: {confirm 'Are you sure?'});@output_buffer.safe_append='
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/todos/show.html.erb:5: syntax error, unexpected '='
+app/views/todos/show.html.erb:5: syntax error, unexpected ',', expecting ')'
+app/views/todos/show.html.erb:7: syntax error, unexpected '}', expecting ')'
+app/views/todos/show.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/todos/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/todos/1" for 127.0.0.1 at 2018-11-27 21:05:37 -0300
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:5: syntax error, unexpected '='
+...to 'Destroy', todo_path, class="btn btn-danger",
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:5: syntax error, unexpected ',', expecting ')'
+...o_path, class="btn btn-danger",
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:7: syntax error, unexpected '}', expecting ')'
+...data: {confirm 'Are you sure?'});@output_buffer.safe_append='
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/todos/show.html.erb:5: syntax error, unexpected '='
+app/views/todos/show.html.erb:5: syntax error, unexpected ',', expecting ')'
+app/views/todos/show.html.erb:7: syntax error, unexpected '}', expecting ')'
+app/views/todos/show.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/todos/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/todos/1" for 127.0.0.1 at 2018-11-27 21:05:38 -0300
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:5: syntax error, unexpected '='
+...to 'Destroy', todo_path, class="btn btn-danger",
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:5: syntax error, unexpected ',', expecting ')'
+...o_path, class="btn btn-danger",
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:7: syntax error, unexpected '}', expecting ')'
+...data: {confirm 'Are you sure?'});@output_buffer.safe_append='
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/todos/show.html.erb:5: syntax error, unexpected '='
+app/views/todos/show.html.erb:5: syntax error, unexpected ',', expecting ')'
+app/views/todos/show.html.erb:7: syntax error, unexpected '}', expecting ')'
+app/views/todos/show.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/todos/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/todos/1" for 127.0.0.1 at 2018-11-27 21:08:22 -0300
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:5: syntax error, unexpected '='
+...to 'Destroy', todo_path, class="btn btn-danger",
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:5: syntax error, unexpected ',', expecting ')'
+...o_path, class="btn btn-danger",
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:7: syntax error, unexpected '}', expecting ')'
+...data: {confirm 'Are you sure?'});@output_buffer.safe_append='
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/todos/show.html.erb:5: syntax error, unexpected '='
+app/views/todos/show.html.erb:5: syntax error, unexpected ',', expecting ')'
+app/views/todos/show.html.erb:7: syntax error, unexpected '}', expecting ')'
+app/views/todos/show.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/todos/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/todos/1" for 127.0.0.1 at 2018-11-27 21:09:07 -0300
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.6ms)
+
+
+  
+SyntaxError (/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:5: syntax error, unexpected '='
+...to 'Destroy', todo_path, class="btn btn-danger",
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:5: syntax error, unexpected ',', expecting ')'
+...o_path, class="btn btn-danger",
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:7: syntax error, unexpected '}', expecting ')'
+...data: {confirm 'Are you sure?'});@output_buffer.safe_append='
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/todos/show.html.erb:5: syntax error, unexpected '='
+app/views/todos/show.html.erb:5: syntax error, unexpected ',', expecting ')'
+app/views/todos/show.html.erb:7: syntax error, unexpected '}', expecting ')'
+app/views/todos/show.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/todos/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/todos/1" for 127.0.0.1 at 2018-11-27 21:11:38 -0300
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:7: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+     data: {confirm 'Are you sure?'}, class="btn b...
+                    ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:7: syntax error, unexpected '}', expecting ')'
+...data: {confirm 'Are you sure?'}, class="btn btn-danger");@ou...
+...                              ^):
+  
+app/views/todos/show.html.erb:7: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/todos/show.html.erb:7: syntax error, unexpected '}', expecting ')'
+Started GET "/todos/1" for 127.0.0.1 at 2018-11-27 21:12:03 -0300
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:7: syntax error, unexpected '='
+...onfirm 'Are you sure?'), class="btn btn-danger");@output_buf...
+...                              ^):
+  
+app/views/todos/show.html.erb:7: syntax error, unexpected '='
+Started GET "/todos/1" for 127.0.0.1 at 2018-11-27 21:15:44 -0300
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:5: syntax error, unexpected '='
+...nfirm: 'Are you sure?'}, class="btn btn-danger");@output_buf...
+...                              ^):
+  
+app/views/todos/show.html.erb:5: syntax error, unexpected '='
+Started GET "/todos/1" for 127.0.0.1 at 2018-11-27 21:16:18 -0300
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:5: syntax error, unexpected '='
+...to 'Destroy', todo_path, class="btn btn-danger", method: :de...
+...                              ^
+/home/ubuntux/Desktop/rails/todo_app/app/views/todos/show.html.erb:5: syntax error, unexpected ',', expecting ')'
+...o_path, class="btn btn-danger", method: :delete, data: {conf...
+...                              ^):
+  
+app/views/todos/show.html.erb:5: syntax error, unexpected '='
+app/views/todos/show.html.erb:5: syntax error, unexpected ',', expecting ')'
+Started GET "/todos/1" for 127.0.0.1 at 2018-11-27 21:16:49 -0300
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (115.7ms)
+Completed 500 Internal Server Error in 117ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `todo' for #<#<Class:0x00007f5b940a2f20>:0x00007f5b9e1108b8>
+Did you mean?  @todo):
+    2: 		  
+    3:   <li class="list-group-item">
+    4:     <%= @todo.description %>
+    5:     <%= link_to 'Destroy', todo, class:'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %>
+    6:   </li>
+    7: </ul>
+    8: 
+  
+app/views/todos/show.html.erb:5:in `_app_views_todos_show_html_erb___872274556523790146_70015735335620'
+Started GET "/todos/1" for 127.0.0.1 at 2018-11-27 21:16:59 -0300
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos/1" for 127.0.0.1 at 2018-11-27 21:17:38 -0300
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos/1" for 127.0.0.1 at 2018-11-27 21:17:39 -0300
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 29ms (Views: 24.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/todos/2/edit" for 127.0.0.1 at 2018-11-27 21:18:02 -0300
+Processing by TodosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:26
+  Rendering todos/edit.html.erb within layouts/application
+  Rendered todos/_todos_form.html.erb (0.8ms)
+  Rendered todos/edit.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/todos/2" for 127.0.0.1 at 2018-11-27 21:18:08 -0300
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.1ms)
+
+
