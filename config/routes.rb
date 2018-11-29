@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   
   root 'todos#index'
   resources :todos
+  get 'todos/:id/complete', to: 'todos#complete', as: 'complete'
+  #get 'todos/list' to: 'todos#list',
 end

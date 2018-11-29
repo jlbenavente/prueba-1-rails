@@ -45,7 +45,11 @@ class TodosController < ApplicationController
   	@todo = Todo.find(params[:id])
   	@todo.completed = true
   	@todo.save
-  	redirect_to todos_path
+  	redirect_to todo_path(@todo)
+  end
+
+  def list
+  	@todos = Todo.all
   end
 	private
 
