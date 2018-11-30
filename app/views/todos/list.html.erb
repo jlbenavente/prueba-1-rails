@@ -1,7 +1,37 @@
+
 <div class="row">
-  <div class="col-md-6">col1</div>
-</div>
-<div class="row">
-  <div class="col-md-6">col2</div
- 
+	<div class="col-sm-3 col-md-6">
+		<table class="table table-dark">
+		  <thead>
+		  <tr>
+		        <ul class="list-group">
+		        	<h1>No completados</h1>
+			        <% @todos.each do |todo| %>
+			          <% if !todo.completed? %>
+			          <li class="list-group-item">
+			            <%= todo.description %>
+			            <% end %>
+			        <% end %>
+		        </ul>
+		    </tr>
+		  </thead>
+		</table>
+	</div>
+	<div class="col-sm-3 col-md-6">
+		<table class="table table-dark">
+		  <thead>
+		  <tr>
+		        <ul class="list-group">
+		        	<h1>completados</h1>
+			        <% @todos.each do |todo| %>
+			          <% if todo.completed? %>
+			          <li class="list-group-item">
+			            <%= todo.description %>
+			            <% end %>
+			        <% end %>
+		        </ul>
+		    </tr>
+		  </thead>
+		</table>
+	</div>
 </div>

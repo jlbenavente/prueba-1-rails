@@ -51,14 +51,15 @@ class TodosController < ApplicationController
   def list
   	@todos = Todo.all
   end
+
 	private
 
 	def todo_params
 		params.require(:todo).permit(:description, :completed)
 	end
 
-	def set_todo
-		@todo = Todo.find(params[:id])
-	end
+#	def set_todo
+#		@todo = Todo.find(params[:id])
+#	end
 
 end

@@ -4,10 +4,12 @@
         <ul class="list-group">
         <% @todos.each do |todo| %>
           <li class="list-group-item">
-            <%= todo.description %> 
-            <%= link_to 'edit', edit_todo_path(todo), class:"btn btn-warning" %>
-            <%= link_to 'new todo', new_todo_path,class:"btn btn-primary"%>
-            <%= link_to 'complete', complete_path(todo), class: "btn btn-info" %>
+            <%= todo.description %>
+
+            <%= link_to 'show', todo_path(todo), class:"btn btn-success" %>
+            <%= link_to 'edit', todos_edit_path(todo), class:"btn btn-warning" %>
+            <%= link_to 'new todo', todos_new_path(todo),class:"btn btn-primary"%>
+            <%= link_to 'complete', todos_complete_path(todo), class: "btn btn-info" %>
 
           </li>
         <%end %>
