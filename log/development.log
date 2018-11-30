@@ -7123,3 +7123,515 @@ Processing by TodosController#list as HTML
 Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/todos/new" for 127.0.0.1 at 2018-11-29 23:39:21 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntux/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (undefined method `validate' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/todos_controller.rb:1:in `<main>'
+Started GET "/todos/new" for 127.0.0.1 at 2018-11-29 23:39:56 -0300
+  
+ActionController::RoutingError (undefined method `validate' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/todos_controller.rb:1:in `<main>'
+Started GET "/todos/new" for 127.0.0.1 at 2018-11-29 23:39:57 -0300
+  
+ActionController::RoutingError (undefined method `validate' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/todos_controller.rb:1:in `<main>'
+Started GET "/todos/new" for 127.0.0.1 at 2018-11-29 23:40:20 -0300
+Started GET "/todos/new" for 127.0.0.1 at 2018-11-29 23:40:30 -0300
+Processing by TodosController#new as HTML
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/_todos_form.html.erb (2.0ms)
+  Rendered todos/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 119ms (Views: 112.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:40:31 -0300
+Processing by TodosController#new as HTML
+Processing by TodosController#index as HTML
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/_todos_form.html.erb (0.8ms)
+  Rendered todos/new.html.erb within layouts/application (1.6ms)
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.1ms)
+
+
+Completed 200 OK in 22ms (Views: 18.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:40:47 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `pages_landing_path' for #<#<Class:0x00007f8938615918>:0x00007f893401b2c8>):
+    29:       <ul class="nav navbar-nav">
+    30:         <li class="active"><%=link_to"index", root_path %></li>
+    31: 
+    32:         <li class="active"><%=link_to"landing", pages_landing_path %></li>
+    33:        <li class="active"><%=link_to"students", students_path %></li>
+    34:           <ul class="dropdown-menu">
+    35:             <li><a href="#">Action</a></li>
+  
+app/views/layouts/application.html.erb:32:in `_app_views_layouts_application_html_erb___2072673098247441444_47281342831660'
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:41:50 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:41:54 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:42:41 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:42:42 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:42:54 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:42:55 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:42:56 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 36ms (Views: 33.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:42:57 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:42:57 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:42:57 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 37ms (Views: 34.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:42:57 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 36ms (Views: 33.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:43:28 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:43:33 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 24ms (Views: 11.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:45:36 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos/new" for 127.0.0.1 at 2018-11-29 23:45:37 -0300
+Processing by TodosController#new as HTML
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/_todos_form.html.erb (3.2ms)
+  Rendered todos/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 35ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:45:38 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 32ms (Views: 29.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/todos/1" for 127.0.0.1 at 2018-11-29 23:45:50 -0300
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 8.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:45:51 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:45:51 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:45:51 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/todos/1" for 127.0.0.1 at 2018-11-29 23:46:04 -0300
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:09 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:09 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:09 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:09 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:09 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:09 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:09 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos/1/edit" for 127.0.0.1 at 2018-11-29 23:46:10 -0300
+Processing by TodosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:26
+  Rendering todos/edit.html.erb within layouts/application
+  Rendered todos/_todos_form.html.erb (3.2ms)
+  Rendered todos/edit.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 37ms (Views: 33.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:13 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:13 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:13 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:13 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:13 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:13 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:13 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:13 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:13 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:13 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:13 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:13 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:13 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:30 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:56 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:57 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:46:58 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:47:00 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:47:00 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.6ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 35ms (Views: 31.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-11-29 23:47:00 -0300
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:5
+  Rendered todos/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.4ms)
+
+
